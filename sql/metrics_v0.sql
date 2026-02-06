@@ -15,7 +15,7 @@ pay AS (
   SELECT
     order_id,
     SUM(payment_value) AS paid_value
-  FROM olist_order_payments_dataset
+  FROM order_payments
   GROUP BY order_id
 ),
 
@@ -27,7 +27,7 @@ itm AS (
     SUM(freight_value) AS freight_value,
     SUM(price + freight_value) AS items_value,
     COUNT(*) AS item_cnt
-  FROM olist_order_items_dataset
+  FROM order_items
   GROUP BY order_id
 ),
 
@@ -36,7 +36,7 @@ cust AS (
   SELECT
     customer_id,
     customer_unique_id
-  FROM olist_customers_dataset
+  FROM customers
 ),
 
 -- 1.4 orders 主表（日期统一用 purchase_timestamp）
@@ -46,7 +46,7 @@ ord AS (
     o.customer_id,
     o.order_status,
     o.order_purchase_timestamp
-  FROM olist_orders_dataset o
+  FROM orders o
 )
 
 SELECT
@@ -116,7 +116,7 @@ GROUP BY dt
 -- 3) 口径校验（建议在DB里手动跑这些查询）
 -- ================
 -- 3.1 订单数 vs fact 行数
--- SELECT COUNT(*) FROM olist_orders_dataset;
+-- SELECT COUNT(*) FROM orders;
 -- SELECT COUNT(*) FROM v_order_fact;
 
 -- 3.2 有支付订单占比
@@ -134,3 +134,23 @@ GROUP BY dt
 -- WHERE is_valid_order = 1
 -- ORDER BY ABS(diff) DESC
 -- LIMIT 50;
+
+-- 3.5 差异汇总统计（整体）
+-- SELECT
+--   COUNT(*) AS n_orders,
+--   AVG(paid_value - items_value) AS avg_diff,
+--   AVG(ABS(paid_value - items_value)) AS avg_abs_diff,
+--   SUM(CASE WHEN paid_value - items_value > 0 THEN 1 ELSE 0 END) * 1.0 / COUNT(*) AS pct_pos_diff,
+--   SUM(CASE WHEN paid_value - items_value < 0 THEN 1 ELSE 0 END) * 1.0 / COUNT(*) AS pct_neg_diff
+-- FROM v_order_fact
+-- WHERE is_valid_order = 1;
+
+-- 3.6 差异分桶（Top 20）
+-- SELECT
+--   ROUND(paid_value - items_value, 2) AS diff_bucket,
+--   COUNT(*) AS cnt
+-- FROM v_order_fact
+-- WHERE is_valid_order = 1
+-- GROUP BY 1
+-- ORDER BY cnt DESC
+-- LIMIT 20;
