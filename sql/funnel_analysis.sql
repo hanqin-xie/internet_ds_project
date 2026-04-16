@@ -44,7 +44,7 @@ SELECT
   c.customer_unique_id,
   o.order_status,
   o.order_purchase_timestamp,
-  o.order_approved_timestamp,
+  o.order_approved_at,
   o.order_delivered_carrier_date,
   o.order_delivered_customer_date,
   o.order_estimated_delivery_date,
@@ -57,7 +57,7 @@ SELECT
   CASE WHEN o.order_purchase_timestamp IS NOT NULL THEN 1 ELSE 0 END AS step_purchase,
   CASE
     WHEN COALESCE(p.paid_value, 0) > 0
-         OR o.order_approved_timestamp IS NOT NULL
+         OR o.order_approved_at IS NOT NULL
     THEN 1 ELSE 0
   END AS step_payment,
   CASE WHEN o.order_delivered_carrier_date IS NOT NULL THEN 1 ELSE 0 END AS step_shipped,
@@ -66,16 +66,16 @@ SELECT
 
   CASE
     WHEN o.order_purchase_timestamp IS NOT NULL
-         AND (COALESCE(p.paid_value, 0) > 0 OR o.order_approved_timestamp IS NOT NULL)
-    THEN julianday(COALESCE(o.order_approved_timestamp, o.order_purchase_timestamp))
+         AND (COALESCE(p.paid_value, 0) > 0 OR o.order_approved_at IS NOT NULL)
+    THEN julianday(COALESCE(o.order_approved_at, o.order_purchase_timestamp))
          - julianday(o.order_purchase_timestamp)
     ELSE NULL
   END AS purchase_to_payment_days,
 
   CASE
-    WHEN o.order_approved_timestamp IS NOT NULL
+    WHEN o.order_approved_at IS NOT NULL
          AND o.order_delivered_carrier_date IS NOT NULL
-    THEN julianday(o.order_delivered_carrier_date) - julianday(o.order_approved_timestamp)
+    THEN julianday(o.order_delivered_carrier_date) - julianday(o.order_approved_at)
     ELSE NULL
   END AS payment_to_ship_days,
 
