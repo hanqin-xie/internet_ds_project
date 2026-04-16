@@ -1,4 +1,4 @@
-# Metric Definitions (v0) - Olist Growth Analytics
+# Metric Definitions (v0) - Olist Growth Lab
 
 ## 时间口径
 - 日期字段：`order_purchase_timestamp`

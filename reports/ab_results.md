@@ -57,5 +57,5 @@
 
 ## 对应文件
 
-- [notebooks/06_ab_simulation.ipynb](/Users/hanqin/internet_ds_project/notebooks/06_ab_simulation.ipynb)
-- [reports/ab_results.md](/Users/hanqin/internet_ds_project/reports/ab_results.md)
+- [notebooks/06_ab_simulation.ipynb](../notebooks/06_ab_simulation.ipynb)
+- [reports/ab_results.md](ab_results.md)

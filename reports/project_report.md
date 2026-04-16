@@ -1,4 +1,4 @@
-# Olist Growth Analysis Report
+# Olist Growth Lab - Analysis Report
 
 ## 项目目标
 
@@ -23,9 +23,9 @@
 
 相关实现文件：
 
-- [sql/metrics_v0.sql](/Users/hanqin/internet_ds_project/sql/metrics_v0.sql)
-- [sql/funnel_analysis.sql](/Users/hanqin/internet_ds_project/sql/funnel_analysis.sql)
-- [sql/cohort.sql](/Users/hanqin/internet_ds_project/sql/cohort.sql)
+- [sql/metrics_v0.sql](../sql/metrics_v0.sql)
+- [sql/funnel_analysis.sql](../sql/funnel_analysis.sql)
+- [sql/cohort.sql](../sql/cohort.sql)
 
 ## 一、交易漏斗结果
 
@@ -147,4 +147,4 @@
 
 - 数据库中的评价与签收字段并不完全同步，因此“评价率”不宜作为严格漏斗转化指标。
 - cohort 结果采用“是否再次下单”的复购定义，更偏增长分析视角，不等同于精细化 CRM 留存口径。
-- [notebooks/02_funnel.ipynb](/Users/hanqin/internet_ds_project/notebooks/02_funnel.ipynb) 与 [notebooks/03_cohort_retention.ipynb](/Users/hanqin/internet_ds_project/notebooks/03_cohort_retention.ipynb) 已在当前数据上执行成功；本报告中的图表来自同一套 SQL 口径。
+- [notebooks/02_funnel.ipynb](../notebooks/02_funnel.ipynb) 与 [notebooks/03_cohort_retention.ipynb](../notebooks/03_cohort_retention.ipynb) 已在当前数据上执行成功；本报告中的图表来自同一套 SQL 口径。

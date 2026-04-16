@@ -1,4 +1,4 @@
-# Olist Growth Analytics Portfolio
+# Olist Growth Lab
 
 一个围绕 Olist 电商数据完成的增长分析项目：从指标口径、漏斗、物流体验与差评分析、cohort 复购、复购驱动因素，到实验设计、历史 A/B 演练和 dashboard 展示，形成了一条完整的“洞察 -> 方案 -> 决策建议”链路。
 

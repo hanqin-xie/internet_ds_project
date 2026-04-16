@@ -38,9 +38,9 @@ def image_or_warning(filename: str, caption: str):
         st.warning(f"Missing figure: {path}")
 
 
-st.set_page_config(page_title="Olist Growth Dashboard", page_icon=":bar_chart:", layout="wide")
+st.set_page_config(page_title="Olist Growth Lab", page_icon=":bar_chart:", layout="wide")
 
-st.title("Olist Growth & Fulfillment Story")
+st.title("Olist Growth Lab")
 st.write(
     "一个面向作品集展示的增长分析 dashboard：把 GMV 趋势、cohort 复购、物流 SLA 与差评/复购关系，"
     "以及历史 A/B 演练结论放在同一页里，方便快速讲清楚业务问题、分析方法和上线建议。"

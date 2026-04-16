@@ -1,4 +1,4 @@
-# Olist Growth Analytics - One Pager
+# Olist Growth Lab - One Pager
 
 ## 项目一句话
 
