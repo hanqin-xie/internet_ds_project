@@ -1,94 +1,165 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Olist dashboard preview">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1220" viewBox="0 0 1600 1220" role="img" aria-label="Olist Growth Lab dashboard preview">
   <defs>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#f9f6ef"/>
-      <stop offset="100%" stop-color="#f1eadc"/>
-    </linearGradient>
-    <linearGradient id="hero" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#173f35"/>
-      <stop offset="100%" stop-color="#2f7d65"/>
-    </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#6d5d49" flood-opacity="0.18"/>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000000" flood-opacity="0.08"/>
     </filter>
   </defs>
 
-  <rect width="1440" height="900" fill="url(#bg)"/>
-  <circle cx="220" cy="90" r="180" fill="#e1812e" opacity="0.10"/>
-  <circle cx="1260" cy="130" r="160" fill="#2f7d65" opacity="0.12"/>
+  <rect width="1600" height="1220" fill="#ffffff"/>
 
-  <rect x="56" y="42" width="1328" height="148" rx="28" fill="url(#hero)" filter="url(#shadow)"/>
-  <text x="92" y="106" font-family="Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#ffffff">Olist Growth &amp; Fulfillment Story</text>
-  <text x="92" y="144" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.88)">GMV trend, cohort repeat, SLA diagnostics, and historical A/B recommendation in one portfolio-ready page.</text>
+  <rect x="0" y="0" width="320" height="1220" fill="#f1f4f9"/>
+  <text x="24" y="66" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#30354a">Filters</text>
+
+  <text x="24" y="128" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#30354a">Destination region</text>
+  <rect x="24" y="146" width="280" height="52" rx="14" fill="#ffffff" stroke="#dce2eb"/>
+  <text x="40" y="180" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#30354a">All</text>
+  <path d="M272 167 L282 177 L292 167" fill="none" stroke="#4f556a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="24" y="248" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#30354a">Minimum cohort size</text>
+  <text x="78" y="286" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#ff4b4b">1000</text>
+  <line x1="24" y1="312" x2="304" y2="312" stroke="#d5dbea" stroke-width="6" stroke-linecap="round"/>
+  <line x1="24" y1="312" x2="92" y2="312" stroke="#ff4b4b" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="92" cy="312" r="10" fill="#ff4b4b"/>
+
+  <rect x="24" y="360" width="104" height="28" rx="8" fill="#ffffff"/>
+  <text x="32" y="380" font-family="Menlo, Monaco, monospace" font-size="14" fill="#2a8a3e">30d/60d</text>
+  <text x="136" y="380" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#30354a">repeat uses first-order users</text>
+  <text x="24" y="412" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#30354a">with a mature observation window.</text>
+
+  <rect x="24" y="460" width="126" height="28" rx="8" fill="#ffffff"/>
+  <text x="32" y="480" font-family="Menlo, Monaco, monospace" font-size="14" fill="#2a8a3e">freight / order</text>
+  <text x="158" y="480" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#30354a">in the experiment panel is a</text>
+  <text x="24" y="512" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#30354a">logistics cost proxy, not full landed cost.</text>
+
+  <text x="420" y="92" font-family="Helvetica, Arial, sans-serif" font-size="58" font-weight="700" fill="#2f3547">Olist Growth Lab</text>
+  <text x="420" y="146" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#2f3547">一个面向作品集展示的增长分析 dashboard：把 GMV 趋势、cohort 复购、物流 SLA 与差评/复购关系，</text>
+  <text x="420" y="182" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#2f3547">以及历史 A/B 演练结论放在同一页里，方便快速讲清楚业务问题、分析方法和上线建议。</text>
+
+  <g font-family="Helvetica, Arial, sans-serif" filter="url(#softShadow)">
+    <rect x="420" y="230" width="268" height="118" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+    <rect x="706" y="230" width="268" height="118" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+    <rect x="992" y="230" width="268" height="118" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+    <rect x="1278" y="230" width="268" height="118" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+  </g>
 
   <g font-family="Helvetica, Arial, sans-serif">
-    <rect x="56" y="218" width="306" height="130" rx="22" fill="#fffdf7" stroke="#e7dcc7"/>
-    <rect x="384" y="218" width="306" height="130" rx="22" fill="#fffdf7" stroke="#e7dcc7"/>
-    <rect x="712" y="218" width="306" height="130" rx="22" fill="#fffdf7" stroke="#e7dcc7"/>
-    <rect x="1040" y="218" width="344" height="130" rx="22" fill="#fffdf7" stroke="#e7dcc7"/>
+    <text x="444" y="262" font-size="16" fill="#6a7386">Total GMV</text>
+    <text x="444" y="306" font-size="40" font-weight="700" fill="#2f3547">R$ 15.9M</text>
+    <text x="444" y="334" font-size="16" fill="#7b8394">99,441 valid orders</text>
 
-    <text x="82" y="256" font-size="14" fill="#6b655d">TOTAL GMV</text>
-    <text x="82" y="304" font-size="40" font-weight="700" fill="#173f35">R$ 15.8M</text>
-    <text x="82" y="332" font-size="16" fill="#6b655d">99k valid orders</text>
+    <text x="730" y="262" font-size="16" fill="#6a7386">Avg Daily Orders</text>
+    <text x="730" y="306" font-size="40" font-weight="700" fill="#2f3547">157</text>
+    <text x="730" y="334" font-size="16" fill="#7b8394">Region: All</text>
 
-    <text x="410" y="256" font-size="14" fill="#6b655d">AVG DAILY ORDERS</text>
-    <text x="410" y="304" font-size="40" font-weight="700" fill="#173f35">157</text>
-    <text x="410" y="332" font-size="16" fill="#6b655d">All regions</text>
+    <text x="1016" y="262" font-size="16" fill="#6a7386">30d Repeat</text>
+    <text x="1016" y="306" font-size="40" font-weight="700" fill="#2f3547">1.62%</text>
+    <text x="1016" y="334" font-size="16" fill="#7b8394">First-order users only</text>
 
-    <text x="738" y="256" font-size="14" fill="#6b655d">30D REPEAT</text>
-    <text x="738" y="304" font-size="40" font-weight="700" fill="#173f35">1.61%</text>
-    <text x="738" y="332" font-size="16" fill="#6b655d">First-order users only</text>
-
-    <text x="1066" y="256" font-size="14" fill="#6b655d">LATE SHARE</text>
-    <text x="1066" y="304" font-size="40" font-weight="700" fill="#173f35">8.01%</text>
-    <text x="1066" y="332" font-size="16" fill="#6b655d">Delivered after ETA</text>
+    <text x="1302" y="262" font-size="16" fill="#6a7386">Late Share</text>
+    <text x="1302" y="306" font-size="40" font-weight="700" fill="#2f3547">8.01%</text>
+    <text x="1302" y="334" font-size="16" fill="#7b8394">Delivered after estimated date</text>
   </g>
 
-  <rect x="56" y="382" width="800" height="240" rx="24" fill="#fffdf7" stroke="#e7dcc7"/>
-  <text x="84" y="420" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#e1812e" font-weight="700">TREND</text>
-  <text x="84" y="452" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#173f35" font-weight="700">GMV Momentum</text>
-  <path d="M120 554 L250 522 L380 500 L510 430 L640 468 L770 412" fill="none" stroke="#e1812e" stroke-width="5"/>
-  <path d="M120 554 L250 522 L380 500 L510 430 L640 468 L770 412" fill="none" stroke="#173f35" stroke-width="0"/>
-  <circle cx="120" cy="554" r="5" fill="#173f35"/>
-  <circle cx="250" cy="522" r="5" fill="#173f35"/>
-  <circle cx="380" cy="500" r="5" fill="#173f35"/>
-  <circle cx="510" cy="430" r="5" fill="#173f35"/>
-  <circle cx="640" cy="468" r="5" fill="#173f35"/>
-  <circle cx="770" cy="412" r="5" fill="#173f35"/>
-  <line x1="120" y1="554" x2="790" y2="554" stroke="#e7dcc7" stroke-width="2"/>
+  <g filter="url(#softShadow)">
+    <rect x="420" y="386" width="640" height="270" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+    <rect x="1080" y="386" width="466" height="270" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+  </g>
 
-  <rect x="880" y="382" width="504" height="240" rx="24" fill="#fffdf7" stroke="#e7dcc7"/>
-  <text x="908" y="420" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#e1812e" font-weight="700">STORY</text>
-  <text x="908" y="452" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#173f35" font-weight="700">Core Findings</text>
-  <text x="908" y="500" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#173f35">Late delivery is a stronger bad-review driver</text>
-  <text x="908" y="534" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#173f35">than total delivery duration.</text>
-  <text x="908" y="582" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#173f35">Repeat is structurally low, so experiment design</text>
-  <text x="908" y="616" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#173f35">should use a two-stage readout.</text>
+  <text x="444" y="426" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#2f3547">GMV Trend</text>
+  <rect x="444" y="446" width="592" height="168" rx="10" fill="#f8fafc" stroke="#e6eaf1"/>
+  <path d="M474 580 L554 548 L634 520 L714 470 L794 488 L874 446 L954 420 L1016 432" fill="none" stroke="#5b8def" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="474" cy="580" r="4" fill="#5b8def"/>
+  <circle cx="554" cy="548" r="4" fill="#5b8def"/>
+  <circle cx="634" cy="520" r="4" fill="#5b8def"/>
+  <circle cx="714" cy="470" r="4" fill="#5b8def"/>
+  <circle cx="794" cy="488" r="4" fill="#5b8def"/>
+  <circle cx="874" cy="446" r="4" fill="#5b8def"/>
+  <circle cx="954" cy="420" r="4" fill="#5b8def"/>
+  <circle cx="1016" cy="432" r="4" fill="#5b8def"/>
+  <text x="444" y="638" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7b8394">补充说明：项目里最终更偏重履约体验与复购，因此这里用总体业务图作为首页引导位。</text>
 
-  <rect x="56" y="652" width="620" height="208" rx="24" fill="#fffdf7" stroke="#e7dcc7"/>
-  <text x="84" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#e1812e" font-weight="700">RETENTION</text>
-  <text x="84" y="722" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#173f35" font-weight="700">Cohort Heatmap</text>
+  <text x="1104" y="426" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#2f3547">Core Findings</text>
+  <text x="1104" y="476" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2f3547">- Late delivery is a stronger driver of bad reviews</text>
+  <text x="1120" y="504" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2f3547">than total delivery duration.</text>
+  <text x="1104" y="548" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2f3547">- Olist behaves like a low-frequency marketplace:</text>
+  <text x="1120" y="576" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2f3547">30d repeat is only about 1.6%.</text>
+  <text x="1104" y="620" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2f3547">- Historical A/B simulation suggests SLA upgrades</text>
+  <text x="1120" y="648" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#2f3547">help CX and repeat, but cost guardrails matter.</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="420" y="690" width="540" height="330" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+    <rect x="980" y="690" width="566" height="330" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+  </g>
+
+  <text x="444" y="730" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#2f3547">Cohort Retention</text>
+  <rect x="444" y="752" width="492" height="240" rx="10" fill="#f8fafc" stroke="#e6eaf1"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="13">
+    <text x="468" y="784" fill="#7b8394">Cohort</text>
+    <text x="562" y="784" fill="#7b8394">M0</text>
+    <text x="630" y="784" fill="#7b8394">M1</text>
+    <text x="698" y="784" fill="#7b8394">M2</text>
+    <text x="766" y="784" fill="#7b8394">M3</text>
+    <text x="834" y="784" fill="#7b8394">M4</text>
+    <text x="902" y="784" fill="#7b8394">M5</text>
+  </g>
   <g>
-    <rect x="84" y="748" width="80" height="26" rx="8" fill="#f6efe3"/>
-    <rect x="172" y="748" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.84"/>
-    <rect x="242" y="748" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.38"/>
-    <rect x="312" y="748" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.20"/>
-    <rect x="382" y="748" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.14"/>
-    <rect x="452" y="748" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.12"/>
-  </g>
-  <g>
-    <rect x="84" y="782" width="80" height="26" rx="8" fill="#f6efe3"/>
-    <rect x="172" y="782" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.78"/>
-    <rect x="242" y="782" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.32"/>
-    <rect x="312" y="782" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.16"/>
-    <rect x="382" y="782" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.12"/>
-    <rect x="452" y="782" width="62" height="26" rx="8" fill="#2f7d65" opacity="0.10"/>
+    <rect x="468" y="800" width="74" height="24" rx="6" fill="#eef2f7"/><text x="486" y="817" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">2017-01</text>
+    <rect x="562" y="800" width="54" height="24" rx="6" fill="#dcefe4"/><rect x="630" y="800" width="54" height="24" rx="6" fill="#72b48f"/><rect x="698" y="800" width="54" height="24" rx="6" fill="#a8d1b8"/><rect x="766" y="800" width="54" height="24" rx="6" fill="#cde5d6"/><rect x="834" y="800" width="54" height="24" rx="6" fill="#e4f0e8"/><rect x="902" y="800" width="54" height="24" rx="6" fill="#eff6f1"/>
+    <rect x="468" y="836" width="74" height="24" rx="6" fill="#eef2f7"/><text x="486" y="853" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">2017-02</text>
+    <rect x="562" y="836" width="54" height="24" rx="6" fill="#dcefe4"/><rect x="630" y="836" width="54" height="24" rx="6" fill="#66ad86"/><rect x="698" y="836" width="54" height="24" rx="6" fill="#b6d8c1"/><rect x="766" y="836" width="54" height="24" rx="6" fill="#d7eadf"/><rect x="834" y="836" width="54" height="24" rx="6" fill="#edf5ef"/><rect x="902" y="836" width="54" height="24" rx="6" fill="#f4f8f5"/>
+    <rect x="468" y="872" width="74" height="24" rx="6" fill="#eef2f7"/><text x="486" y="889" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">2017-03</text>
+    <rect x="562" y="872" width="54" height="24" rx="6" fill="#dcefe4"/><rect x="630" y="872" width="54" height="24" rx="6" fill="#7db894"/><rect x="698" y="872" width="54" height="24" rx="6" fill="#9cccad"/><rect x="766" y="872" width="54" height="24" rx="6" fill="#cde5d6"/><rect x="834" y="872" width="54" height="24" rx="6" fill="#e8f2eb"/><rect x="902" y="872" width="54" height="24" rx="6" fill="#f2f7f3"/>
+    <rect x="468" y="908" width="74" height="24" rx="6" fill="#eef2f7"/><text x="486" y="925" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">2017-04</text>
+    <rect x="562" y="908" width="54" height="24" rx="6" fill="#dcefe4"/><rect x="630" y="908" width="54" height="24" rx="6" fill="#70b18d"/><rect x="698" y="908" width="54" height="24" rx="6" fill="#abd2ba"/><rect x="766" y="908" width="54" height="24" rx="6" fill="#d7eadf"/><rect x="834" y="908" width="54" height="24" rx="6" fill="#edf5ef"/><rect x="902" y="908" width="54" height="24" rx="6" fill="#f4f8f5"/>
   </g>
 
-  <rect x="700" y="652" width="684" height="208" rx="24" fill="#fffdf7" stroke="#e7dcc7"/>
-  <text x="728" y="690" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#e1812e" font-weight="700">EXPERIMENT</text>
-  <text x="728" y="722" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#173f35" font-weight="700">Historical A/B Recommendation</text>
-  <text x="728" y="768" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#173f35">30d repeat: 1.61% → 1.95%</text>
-  <text x="728" y="802" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#173f35">late share: 8.08% → 6.67%</text>
-  <text x="728" y="836" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#cb5a39">Guardrail: freight / order worsens</text>
+  <text x="1004" y="730" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#2f3547">SLA vs Bad Review</text>
+  <rect x="1004" y="752" width="518" height="112" rx="10" fill="#f8fafc" stroke="#e6eaf1"/>
+  <rect x="1004" y="880" width="518" height="112" rx="10" fill="#f8fafc" stroke="#e6eaf1"/>
+  <text x="1028" y="784" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7b8394">Bad review rate by delay vs estimated delivery</text>
+  <text x="1028" y="912" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#7b8394">Bad review rate by overall delivery duration</text>
+  <g>
+    <rect x="1030" y="802" width="80" height="18" rx="6" fill="#d8e4f8"/>
+    <rect x="1130" y="790" width="80" height="30" rx="6" fill="#9fc0ef"/>
+    <rect x="1230" y="742" width="80" height="78" rx="6" fill="#5b8def"/>
+    <rect x="1330" y="720" width="80" height="100" rx="6" fill="#3f76dc"/>
+    <text x="1034" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">On-time</text>
+    <text x="1138" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">1-3d</text>
+    <text x="1234" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">4-7d</text>
+    <text x="1338" y="842" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">7d+</text>
+  </g>
+  <g>
+    <rect x="1030" y="944" width="74" height="20" rx="6" fill="#d8e4f8"/>
+    <rect x="1120" y="936" width="74" height="28" rx="6" fill="#bdd2f4"/>
+    <rect x="1210" y="926" width="74" height="38" rx="6" fill="#9fc0ef"/>
+    <rect x="1300" y="902" width="74" height="62" rx="6" fill="#5b8def"/>
+    <rect x="1390" y="860" width="74" height="104" rx="6" fill="#3f76dc"/>
+    <text x="1034" y="986" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">0-3d</text>
+    <text x="1124" y="986" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">3-7d</text>
+    <text x="1214" y="986" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">7-14d</text>
+    <text x="1304" y="986" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">14-21d</text>
+    <text x="1394" y="986" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#4d5668">21d+</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="420" y="1046" width="1126" height="138" rx="18" fill="#ffffff" stroke="#e6eaf1"/>
+  </g>
+  <text x="444" y="1084" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#2f3547">Historical A/B Simulation</text>
+  <rect x="444" y="1100" width="1078" height="60" rx="10" fill="#f8fafc" stroke="#e6eaf1"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#2f3547">
+    <text x="462" y="1122" font-weight="700">Metric</text>
+    <text x="660" y="1122" font-weight="700">Control</text>
+    <text x="790" y="1122" font-weight="700">Treatment</text>
+    <text x="946" y="1122" font-weight="700">Diff</text>
+    <text x="1092" y="1122" font-weight="700">Decision</text>
+
+    <text x="462" y="1148">30d repeat</text>
+    <text x="660" y="1148">1.61%</text>
+    <text x="790" y="1148">1.95%</text>
+    <text x="946" y="1148">+0.33pp</text>
+    <text x="1092" y="1148" fill="#1f7a39">Positive</text>
+
+    <text x="1180" y="1148">Late share 8.08% → 6.67%</text>
+    <text x="1360" y="1148">Guardrail: freight / order worsens</text>
+  </g>
 </svg>
